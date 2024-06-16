@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+<span></span>
+<span></span>
+<style>*{position:relative;
+        background:#FFFFCD
+          }
+  div {
+    top:2px;
+    left:52px;
+    width: 280px;
+    height: 150px;
+    background: #EDAF38;
+  }
+  span,span::before,span::after{
+    position: absolute;
+    content:'';
+    height:130px;
+    width:80px;
+    background:#FFFFCD;
+    top:0px;
+  }
+  span{
+    top:12px;
+    left:152px;
+  }
+  span:nth-child(2){
+    top:162px;
+  }
+  span:nth-child(2),span:nth-child(2)::before,span:nth-child(2)::after{
+    background:#EDAF38;
+    height:120px;
+  }
+  
+  span::before{
+    left:-90px;
+  }
+  span::after{
+    left:90px;
+  }
+</style>
+
+
+</body>
+</html>
